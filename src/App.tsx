@@ -1,10 +1,7 @@
-function App() {
+import Layout from "./components/Layout";
 
-  return (
-    <>
-      <h1 className="text-3xl bg-red-600">Hello</h1>
-    </>
-  )
+function App() {
+  return <Layout />
 }
 
 export default App;
