@@ -1,3 +1,4 @@
+import BasicProps from "./BasicProps";
 import Navbar from "./Navbar";
 
 const Layout = () => {
@@ -20,7 +21,9 @@ const Layout = () => {
                         </span>
                     </div>
                 </header>
-                <div className="space-y-8"></div>
+                <div className="space-y-8">
+                    <BasicProps />
+                </div>
             </div>
         </div>
     );
