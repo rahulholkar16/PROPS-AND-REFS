@@ -6,9 +6,7 @@ const Layout = () => {
         <div className={`min-h-screen bg-gray-800`}>
             <Navbar />
             <div className="mx-auto container px-4 py-8">
-                <header
-                    className={`text-center transition-colors mb-12 text-white`}
-                >
+                <header className={`text-center transition-colors mb-12 text-white`}>
                     <h1 className="text-5xl font-bold mb-4">
                         React props explained
                     </h1>
