@@ -1,6 +1,7 @@
 import BasicProps from "./BasicProps";
 import ChildrenProps from "./ChildrenProps";
 import Navbar from "./Navbar";
+import RefProps from "./RefProps";
 
 const Layout = () => {
     return (
@@ -31,7 +32,7 @@ const Layout = () => {
                     <ChildrenProps />
                 </div>
                 <div className="space-y-8">
-                    <RefP
+                    <RefProps />
                 </div>
             </div>
         </div>
