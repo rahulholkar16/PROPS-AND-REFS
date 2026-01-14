@@ -28,12 +28,7 @@ const Layout = () => {
                 <div className="space-y-8">
                     <BasicProps />
                 </div>
-                <div className="space-y-8">
-                    <ChildrenProps />
-                </div>
-                <div className="space-y-8">
-                    <RefProps />
-                </div>
+               
             </div>
         </div>
     );
