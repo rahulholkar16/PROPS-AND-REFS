@@ -25,7 +25,11 @@ const Layout = () => {
                         </span>
                     </div>
                 </header>
-                
+                <div className="space-y-8">
+                    <div id="basic-props" className="scroll-mt-200">
+                        <BasicProps />
+                    </div>
+                </div>
             </div>
         </div>
     );
