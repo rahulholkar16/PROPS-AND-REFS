@@ -25,12 +25,7 @@ const Layout = () => {
                         </span>
                     </div>
                 </header>
-                <div className="space-y-8">
-                    <BasicProps />
-                </div>
-               <div className="space-y-8">
-                    <RefProp />
-                </div>
+                
             </div>
         </div>
     );
