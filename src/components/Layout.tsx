@@ -1,7 +1,9 @@
 import BasicProps from "./BasicProps";
 import ChildrenProps from "./ChildrenProps";
+import ComplexProps from "./ComplexProps";
 import Navbar from "./Navbar";
 import RefProps from "./RefProps";
+import { ThemeToggler } from "./ThemeToggler";
 
 const Layout = () => {
     return (
@@ -28,6 +30,26 @@ const Layout = () => {
                 <div className="space-y-8">
                     <div id="basic-props" className="scroll-mt-200">
                         <BasicProps />
+                    </div>
+                </div>
+                <div className="space-y-8">
+                    <div id="basic-props" className="scroll-mt-200">
+                        <RefProps />
+                    </div>
+                </div>
+                <div className="space-y-8">
+                    <div id="basic-props" className="scroll-mt-200">
+                        <ChildrenProps />
+                    </div>
+                </div>
+                <div className="space-y-8">
+                    <div id="basic-props" className="scroll-mt-200">
+                        <ComplexProps />
+                    </div>
+                </div>
+                <div className="space-y-8">
+                    <div id="basic-props" className="scroll-mt-200">
+                        <ThemeToggler />
                     </div>
                 </div>
             </div>
