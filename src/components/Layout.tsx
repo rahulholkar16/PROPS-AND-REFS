@@ -4,7 +4,7 @@ import ComplexProps from "./ComplexProps";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import RefProps from "./RefProps";
-import { ThemeToggler } from "./ThemeToggler";
+import ThemeToggler from "./ThemeToggler";
 
 const Layout = () => {
     return (
