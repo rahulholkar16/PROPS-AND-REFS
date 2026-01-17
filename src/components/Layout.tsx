@@ -1,6 +1,7 @@
 import BasicProps from "./BasicProps";
 import ChildrenProps from "./ChildrenProps";
 import ComplexProps from "./ComplexProps";
+import Footer from "./Footer";
 import Navbar from "./Navbar";
 import RefProps from "./RefProps";
 import { ThemeToggler } from "./ThemeToggler";
@@ -52,6 +53,7 @@ const Layout = () => {
                         <ThemeToggler />
                     </div>
                 </div>
+                <Footer />
             </div>
         </div>
     );
