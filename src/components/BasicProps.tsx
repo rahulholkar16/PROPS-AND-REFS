@@ -1,6 +1,6 @@
 const BasicProps = () => {
   return (
-    <div>BasicProps</div>
+    <div className="text-white">BasicProps</div>
   )
 }
 

@@ -1,6 +1,6 @@
 import type React from "react";
 
-const Button: React.FC<ButtonProp> = ({ text, color, size, onClick, disabled }) => {
+const Button: React.FC<ButtonProp> = ({ text="Click", color, size, onClick, disabled }) => {
   return (
       <button
           onClick={onClick}
