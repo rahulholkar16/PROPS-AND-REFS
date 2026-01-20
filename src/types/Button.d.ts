@@ -1,6 +1,6 @@
 interface ButtonProp {
     text: string;
-    color: string;
+    color: "primary" | "secondary" | "danger" | "success";
     size: "small" | "large";
     onClick: () => void;
     disabled: boolean;
