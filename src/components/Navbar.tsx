@@ -8,7 +8,7 @@ const Navbar = () => {
         { id: "theme", label: "Theme Props", icon: "🎨" },
     ];
     return (
-        <nav className={`sticky top-0 shadow-md transition-all duration-200`}>
+        <nav className={`sticky top-0 shadow-md transition-all duration-200 backdrop-blur-lg`}>
             <div className="mx-auto px-4 py-4 container flex justify-between items-center">
                 <h2 className="font-bold text-amber-200 text-3xl">PROPS&REFS</h2>
                 <div className="flex flex-wrap gap-4 justify-center">
