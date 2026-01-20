@@ -15,7 +15,7 @@ const BasicProps = () => {
           </p>
           {/* Different colors Button */}
           <div className="space-y-4 mt-2">
-              <h3>Different colors {count}</h3>
+              <h3>Different colors</h3>
               <div className="flex flex-wrap gap-3">
                   <Button
                       text="Primary button!"
@@ -49,7 +49,7 @@ const BasicProps = () => {
           </div>
           {/* Different size Button */}
           <div className="space-y-4 mt-2">
-              <h3>Different sizes {count}</h3>
+              <h3>Different sizes</h3>
               <div className="flex flex-wrap gap-3">
                   <Button
                       text="Small button!"
@@ -69,7 +69,7 @@ const BasicProps = () => {
           </div>
           {/* Other Types */}
           <div className="space-y-4 mt-2">
-              <h3>Other types {count}</h3>
+              <h3>Other types</h3>
               <div className="flex flex-wrap gap-3">
                   <Button
                       text="Disabled button!"
@@ -86,6 +86,13 @@ const BasicProps = () => {
                       onClick={() => setCount((prev) => prev + 1)}
                   />
               </div>
+          </div>
+          {/* Counter Element */}
+          <div className="mt-6 p-4 bg-blue-50 rounded-lg">
+              <p className="text-lg font-medium text-gray-700">
+                  Click Count:{" "}
+                  <span className="text-blue-600 font-bold">{count}</span>
+              </p>
           </div>
       </section>
   );
