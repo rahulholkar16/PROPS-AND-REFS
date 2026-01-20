@@ -6,7 +6,7 @@ const Button: React.FC<ButtonProp> = ({ text="Click", color, size, onClick, disa
           onClick={onClick}
           disabled={disabled}
           className={`px-6 py-2 rounded-lg font-medium transition-all duration-300
-        ${size === "small" ? "text-sm px-4 py-1" : ""}
+        ${size === "small" ? "text-sm px-2 py-1" : ""}
         ${size === "large" ? "text-lg px-8 py-3" : ""}
         ${color === "primary" ? "bg-blue-500 hover:bg-blue-600 text-white" : ""}
         ${color === "secondary" ? "bg-gray-500 hover:bg-gray-600 text-white" : ""}
