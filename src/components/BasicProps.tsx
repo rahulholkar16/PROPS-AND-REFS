@@ -67,6 +67,26 @@ const BasicProps = () => {
                   />
               </div>
           </div>
+          {/* Other Types */}
+          <div className="space-y-4 mt-2">
+              <h3>Other types {count}</h3>
+              <div className="flex flex-wrap gap-3">
+                  <Button
+                      text="Disabled button!"
+                      size="small"
+                      disabled={true}
+                      color="primary"
+                      onClick={() => setCount((prev) => prev + 1)}
+                  />
+                  <Button
+                      text="Enable button!"
+                      size="large"
+                      disabled={false}
+                      color="secondary"
+                      onClick={() => setCount((prev) => prev + 1)}
+                  />
+              </div>
+          </div>
       </section>
   );
 }
