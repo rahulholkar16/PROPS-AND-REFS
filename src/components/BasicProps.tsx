@@ -88,11 +88,18 @@ const BasicProps = () => {
               </div>
           </div>
           {/* Counter Element */}
-          <div className="mt-6 p-4 bg-blue-50 rounded-lg">
+          <div className="mt-6 p-4 bg-blue-50 rounded-lg flex justify-between items-center">
               <p className="text-lg font-medium text-gray-700">
                   Click Count:{" "}
                   <span className="text-blue-600 font-bold">{count}</span>
               </p>
+              <Button 
+                  text="Reset Counter"
+                  size="small"
+                  color="danger"
+                  onClick={() => setCount(0)}
+                  disabled={false}
+              />
           </div>
       </section>
   );
