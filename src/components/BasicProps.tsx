@@ -13,7 +13,8 @@ const BasicProps = () => {
               officia eaque ad pariatur odio aut voluptas doloremque incidunt
               labore sequi!
           </p>
-          <div className="space-y-4">
+          {/* Different colors Button */}
+          <div className="space-y-4 mt-2">
               <h3>Different colors {count}</h3>
               <div className="flex flex-wrap gap-3">
                   <Button
@@ -42,6 +43,26 @@ const BasicProps = () => {
                       size="large"
                       disabled={false}
                       color="success"
+                      onClick={() => setCount((prev) => prev + 1)}
+                  />
+              </div>
+          </div>
+          {/* Different size Button */}
+          <div className="space-y-4 mt-2">
+              <h3>Different sizes {count}</h3>
+              <div className="flex flex-wrap gap-3">
+                  <Button
+                      text="Small button!"
+                      size="small"
+                      disabled={false}
+                      color="primary"
+                      onClick={() => setCount((prev) => prev + 1)}
+                  />
+                  <Button
+                      text="Large button!"
+                      size="large"
+                      disabled={false}
+                      color="secondary"
                       onClick={() => setCount((prev) => prev + 1)}
                   />
               </div>
