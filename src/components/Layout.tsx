@@ -35,17 +35,17 @@ const Layout = () => {
                 </div>
                 <div className="space-y-8">
                     <div id="basic-props" className="scroll-mt-200">
-                        <RefProps />
-                    </div>
-                </div>
-                <div className="space-y-8">
-                    <div id="basic-props" className="scroll-mt-200">
                         <ChildrenProps />
                     </div>
                 </div>
                 <div className="space-y-8">
                     <div id="basic-props" className="scroll-mt-200">
                         <ComplexProps />
+                    </div>
+                </div>
+                <div className="space-y-8">
+                    <div id="basic-props" className="scroll-mt-200">
+                        <RefProps />
                     </div>
                 </div>
                 <div className="space-y-8">
