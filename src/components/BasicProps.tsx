@@ -1,14 +1,20 @@
 import { useState } from "react"
 import Button from "./Button"
+import useTheme from "../hook/useTheme";
 
 const BasicProps = () => {
+    const {isDark} = useTheme();
   const [count, setCount] = useState(0);
   return (
-      <section className="p-8 bg-white rounded-xl shadow-2xl">
-          <h2 className="text-3xl font-bold mb-4 text-gray-800">
+      <section
+          className={`p-8 rounded-xl shadow-2xl ${isDark ? "bg-gray-800 text-white" : "bg-white"}`}
+      >
+          <h2
+              className={`text-3xl font-bold mb-4  ${isDark ? "text-white" : "text-gray-800"}`}
+          >
               Basic Props Example
           </h2>
-          <p>
+          <p className={`mb-6 ${isDark ? "text-white" : "text-gray-600"}`}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
               officia eaque ad pariatur odio aut voluptas doloremque incidunt
               labore sequi!
@@ -88,12 +94,14 @@ const BasicProps = () => {
               </div>
           </div>
           {/* Counter Element */}
-          <div className="mt-6 p-4 bg-blue-50 rounded-lg flex justify-between items-center">
-              <p className="text-lg font-medium text-gray-700">
+          <div
+              className={`mt-6 p-4  rounded-lg flex justify-between items-center ${isDark ? "bg-gray-700" : "bg-blue-50"}`}
+          >
+              <p className={`text-lg font-medium ${isDark ? "text-white" : "text-gray-700"}`}>
                   Click Count:{" "}
                   <span className="text-blue-600 font-bold">{count}</span>
               </p>
-              <Button 
+              <Button
                   text="Reset Counter"
                   size="small"
                   color="danger"

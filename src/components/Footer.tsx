@@ -1,5 +1,7 @@
+import useTheme from "../hook/useTheme"
+
 const Footer = () => {
-    const isDark = false;
+  const {isDark} = useTheme();
   return (
     <footer className={`mt-12 text-center pb-8 transition-colors ${isDark ? "text-gray-400" : "text-gray-600"}`}>
         <p className="text-sm">
